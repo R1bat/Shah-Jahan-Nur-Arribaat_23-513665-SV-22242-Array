@@ -1,0 +1,26 @@
+from array import*
+#kode di atas digunakan untuk mengambil modul array
+
+var_array = array('i',[])
+#ini adalah sebuah inisiasi array pada sebuah variabel
+
+print("Program ini akan menghasilkan output berupa nilai rata-rata dari beberapa angka yang diinput")
+print("---"*5)
+var_input = input("Masukkan beberapa angka yang dipisahkan spasi :")
+#meminta input angka dari user
+
+var_split_input = var_input.split()
+#mengubah input menjadi list
+
+for angka in var_split_input:
+    var_array.append(int(angka))
+#memasukkan list input ke array
+
+var_total = sum(var_array)
+#menjumlahkan setiap elemen di dalam array
+var_rata2 = var_total/len(var_array)
+#membagi total penjumlahan elemen array dengan banyaknya elemen array
+
+print("---"*5)
+print("Rata-rata dari angka-angka tersebut adalah", var_rata2)
+#menampilkan hasil rata-rata dari angka yang dimasukkan

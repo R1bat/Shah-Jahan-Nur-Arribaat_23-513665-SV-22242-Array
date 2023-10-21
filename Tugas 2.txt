@@ -1,0 +1,22 @@
+from array import*
+#mengimport modul array pada program
+var_array = array('i',[30,7,5,8,35])
+#menginisiasi array dengan elemen yang sudah ditentukan
+
+print("Program ini akan menghasilkan informasi, apakah suatu angka terdapat pada data atau tidak")
+print("---"*5)
+#sekedar memberikan informasi kepada user mengenai program ini dan memberikan sedikit dekorasi
+var_input = int(input("Masukkan angka yang dicari : "))
+#meminta angka yang hendak dicari
+
+import time
+print("Loading...")
+time.sleep(3)
+print("---"*5)
+#supaya lebih menyenangkan dan memberikan dekorasi
+
+if var_input in var_array:
+    print("Angka",var_input,"Ditemukan")
+else:
+    print("Angka",var_input,"Tidak ditemukan")
+#memberikan percabangan untuk menentukan apakah terdapat nilai tersebut dalam sebuah array

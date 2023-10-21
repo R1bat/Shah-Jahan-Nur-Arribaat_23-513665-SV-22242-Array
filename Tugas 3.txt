@@ -1,0 +1,13 @@
+import numpy as np
+#mengimport modul array pada program
+#kita menggunakan numpy karena format yang lebih enak dilihat
+
+var_array = np.array([1,3,5,7,9])
+#menginisiasi array dengan elemen yang sudah ditentukan
+
+for angka in range(len(var_array)):
+    var_array[angka] += 1 
+#menambahkan 1 pada setiap elemen dalam array
+
+print(var_array[::-1])
+#dengan menggunakan -1 maka kita melakukan slice secara terbalik
